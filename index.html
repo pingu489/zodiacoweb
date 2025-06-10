@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre tu signo del zodiaco y verifica la compatibilidad entre signos.">
+    <title>Zodiaco Interactivo</title>
+
+</head>
+
+<body>
+    <div>
+        <h1>🔮 Descubre tu signo del zodiaco</h1>
+
+        <div class="input-row align-label">
+            <label for="fecha">Introduce tu fecha (dd/mm):</label>
+            <input type="text" id="fecha" placeholder="Ej: 14/03">
+            <button onclick="descubrirSigno()">Saber mi signo</button>
+        </div>
+
+        <div class="resultado" id="resultadoSigno"></div>
+
+        <h2>💘 Compatibilidad entre signos</h2>
+        <div class="input-row">
+            <input type="text" id="signo1" placeholder="Primer signo">
+            <input type="text" id="signo2" placeholder="Segundo signo">
+            <button onclick="verCompatibilidad()">Comprobar compatibilidad</button>
+        </div>
+
+        <div class="resultado" id="resultadoCompatibilidad"></div>
+    </div>
+
+    <script src="zodiaco.js"></script>
+</body>
+
+</html>
